@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+
+
+    <style>
+        body {
+            background-color: black;
+
+        }
+
+        .box {
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+
+            border: 2px solid black;
+            cursor: pointer;
+            margin: auto;
+            margin-top: 100px;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            display: inline-block;
+            transition: all;
+
+        }
+        .box:hover{background-color: blue;
+            border-radius: 300px;
+            height: 200px;
+            width: 200px;
+            border: 10px dashed pink;
+            transform: skew(90deg);
+            transform: skewy(90deg);
+            transform: translateY(400PX);
+            transform: scale(1.5);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>
