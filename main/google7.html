@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{background-color: rgba(32, 33, 36, 1);
+
+
+        }
+        .container {
+            /* border: 2px solid rebeccapurple; */
+            height: 98vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            /* border: 2px solid black; */
+            height: 15%;
+            width: 99%;
+            display: flex;
+            align-items: center;
+        }
+
+        .mid {
+            /* border: 2px dotted black; */
+            width: 99%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer {
+            width: 99%;
+            height: 15%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .content {
+            width: 99%;
+            height: 65%;
+            /* border: 2px dotted blue; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .space {
+            width: 99%;
+            height: 35%;
+            /* border: 2px dotted green; */
+        }
+
+        .foot {
+
+            width: 99%;
+            height: 45%;
+            /* border: 2px dotted brown; */
+        }
+
+        .headspace {
+            width: 80%;
+            height: 90%;
+            /* border: 2px dotted purple; */
+        }
+
+        .headicon {
+            height: 90%;
+            width: 20%;
+            /* border: 2px dotted green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .google {
+            width: 50%;
+            height: 100%;
+            /* border: 2px dotted red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .logo {
+            height: 30%;
+            width: 100%;
+            /* border: 2px dotted black; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .search {
+            height: 15%;
+            width: 100%;
+            /* border: 2px dotted black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+
+        .buttons {
+            height: 18%;
+            width: 100%;
+            /* border: 2px dotted black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .offered {
+            height: 10%;
+            width: 100%;
+            /* border: 2px dotted black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .icon {
+            width: 100%;
+            height: 70%;
+            /* border: 2px dotted green; */
+        }
+
+        .google-img {
+            height: 100%;
+            width: 50%;
+            /* border: 2px dotted black; */
+            padding: 0px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+
+        #searchbox {
+            width: 83%;
+            height: 90%;
+            border: none;
+            text-decoration: none;
+            outline: none;
+            font-size: large;
+        }
+
+        i {
+            font-size: 25px;
+        }
+
+        .search:hover {
+            background-color: lightgray;
+        }
+
+        #searchbox:hover {
+            background-color: lightgray;
+        }
+
+        .inbutton {
+            width: 60%;
+            height: 90%;
+            border: 2px dotted red;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #searchbutton {
+            font-size: large;
+            height: 80%;
+            border-radius: 7px;
+            padding: 10px 10px;
+            border: none;
+        }
+
+        .offered p {
+            margin: 0% 0%;
+            padding: 0% 0%;
+            font-size: large;
+        }
+
+        .footleft {
+            width: 30%;
+            height: 90%;
+            /* border: 2px dotted black; */
+        }
+
+        .footspace {
+            width: 50%;
+            height: 90%;
+            /* border: 2px dotted black; */
+        }
+
+        .footright {
+            width: 20%;
+            height: 90%;
+            /* border: 2px dotted black; */
+
+        }
+
+        .foot-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px dotted red; */
+            width: 99%;
+            height: 45%;
+        }
+
+        .footleft {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #anchorfoot {
+            margin: 12px;
+            font-size: large;
+            color: black;
+            text-decoration: none;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #topicon:hover {
+            background-color: blueviolet;
+            border-radius: 10px;
+            transition: all;
+            transition-timing-function: ease-in;
+            transition-duration: 1s;
+            transform: scale(1.5);
+        }
+
+        #searchbutton:hover {
+            /* border: 1px solid gray; */
+        }
+
+        #anchoroffered {
+            font-size: small;
+            margin: 3px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headspace"></div>
+            <div class="headicon">
+                <div class="icon">
+                    <a href="" id="anchorfoot">Gmail</a>
+                    <a href="" id="anchorfoot">Images</a> &nbsp;&nbsp;
+                    <i id="topicon" class="fa-solid fa-border-none"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i id="topicon" class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="content">
+                <div class="google">
+                    <div class="logo">
+                        <div class="google-img">
+                            <img src="googlelogo_light_color_272x92dp.png"
+                                alt=" height="100%" width="80%">
+                        </div>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;
+                        <input type="text" id="searchbox"><i class="fa-solid fa-microphone"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-camera"></i>
+                    </div>
+                    <div class="buttons">
+                        <div class="inbutton">
+
+                            <button id="searchbutton">Google Search</button>
+                            <button id="searchbutton">I'm Feeling Lucky</button>
+                        </div>
+                    </div>
+                    <div class="offered">
+                        <p>Google offered in:</p>
+                        <a href="" id="anchoroffered">हिन्दी</a>
+                        <a href="" id="anchoroffered">বাংলা</a>
+                        <a href="" id="anchoroffered">తెలుగు</a>
+                        <a href="" id="anchoroffered">मराठी</a>
+                        <a href="" id="anchoroffered">தமிழ்</a>
+                        <a href="" id="anchoroffered">ગુજરાતી</a>
+                        <a href="" id="anchoroffered">ಕನ್ನಡ</a>
+                        <a href="" id="anchoroffered">മലയാളം</a>
+                        <a href="" id="anchoroffered">ਪੰਜਾਬੀ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+
+
+
+        </div>
+        <div class="footer">
+            <div class="foot">
+                <h3>India</h3>
+            </div>
+            <div class="foot-2">
+                <div class="footleft">
+                    <a href="" id="anchorfoot">About</a>
+                    <a href="" id="anchorfoot">Advertising</a>
+                    <a href="" id="anchorfoot">Business</a>
+                    <a href="" id="anchorfoot"> How Search Work?</a>
+                </div>
+                <div class="footspace"></div>
+                <div class="footright">
+                    <a href="" id="anchorfoot">Privacy</a>
+                    <a href="" id="anchorfoot">Terms</a>
+                    <a href="" id="anchorfoot">Settings</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
