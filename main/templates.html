@@ -21,10 +21,6 @@
 
 
         .header {
-            height: 25%;
-            /* border: 2px solid black; */
-
-
         }
 
         .navbar1 {
@@ -38,11 +34,8 @@
         }
 
         .navbar2 {
-
-            height: 94%;
-            /* border: 2px solid black; */
-
-        }
+    position: relative;
+}
 
         img {
             height: 100%;
@@ -89,32 +82,23 @@
         }
 
         #centerlogo1 {
-            position: absolute;
-            top: 480px;
-            left: 606px;
-
-            /* border: 2px solid black; */
             width: 55px;
             height: 50px;
             background-color: rgb(65, 59, 59);
-
-
             color: #fff;
             text-align: center;
             padding: 13px;
             background-color: #000 !important;
             opacity: 0.75;
+            display: inline-block;
         }
 
         #centerlogo2 {
-            position: absolute;
-            top: 488px;
             left: 688px;
-            /* border: 2px solid black; */
             width: 156px;
             height: 38px;
             padding: 10px;
-
+            display: inline-block;
             font-size: 35px;
             color: #fff;
         }
@@ -127,45 +111,30 @@
 
 
         .body {
-            height: 50%;
-            /* border: 2px solid rgb(40, 37, 226); */
-
+            padding: 100PX 0;
         }
 
 
         #navbar1 {
             display: flex;
             align-items: center;
-            height: 10%;
             /* border: 2px solid black; */
-
+            
         }
 
         #img {
-            height: 38%;
-
-            /* border: 2px solid black; */
             display: flex;
-            justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
-
+            column-gap: 10px;
         }
 
-        #navbar2 {
-
-            justify-content: left;
-            height: 8%;
-            /* border: 2px solid black; */
-
-        }
+        #navbar2 {/* border: 2px solid black; */}
 
         #img2 {
-            height: 40%;
             /* border: 2px solid black; */
             display: flex;
             justify-content: space-around;
-
         }
 
         #item1 {
@@ -190,12 +159,18 @@
         .houses {
             display: flex;
             align-items: center;
-            width: 305px;
-            height: 300px;
-            /* border: 2px solid green; */
-
+            width: 24%;
+            position: relative;
         }
+.houses h2{ position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #fff !important;
+            background-color: #000 !important;
+            padding: 5px 15px;
 
+
+}
         #btn1 {
 
             position: absolute;
@@ -441,6 +416,17 @@
             margin-left: 10px;
 
         }
+
+        .xx{
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
     </style>
 
 </head>
@@ -462,8 +448,10 @@
             </div>
             <div class="navbar2">
                 <img src="architect.jpg">
+               <div class="xx">
                 <h1 id="centerlogo1">BR</h1>
                 <h6 id="centerlogo2">Architects</h6>
+               </div>
             </div>>
         </div>
         <div class="body">
@@ -475,31 +463,31 @@
             <div id="img">
                 <div class="houses" id="house1">
                     <img src="house5.jpg">
-                    <h2 id="btn1"> summer house</h2>
+                    <h2 > summer house</h2>
 
 
                 </div>
                 <div class="houses" id="house2"><img src="house2.jpg">
-                    <h2 id="btn2"> Brick house</h2>
+                    <h2 > Brick house</h2>
 
                 </div>
                 <div class="houses" id="house3"><img src="house3.jpg">
-                    <h3 id="btn3">Renovated house</h3>
+                    <h2>Renovated house</h2>
                 </div>
                 <div class="houses" id="house4"><img src="house4.jpg">
-                    <h2 id="btn4"> Barn house</h2>
+                    <h2> Barn house</h2>
                 </div>
                 <div class="houses" id="house5"><img src="house2.jpg">
-                    <h2 id="btn5"> Brick house</h2>
+                    <h2 > Brick house</h2>
                 </div>
                 <div class="houses" id="house6"><img src="house5.jpg">
-                    <h2 id="btn6"> summer house</h2>
+                    <h2 > summer house</h2>
                 </div>
                 <div class="houses" id="house6"><img src="house4.jpg">
-                    <h2 id="btn7"> Barn house</h2>
+                    <h2 > Barn house</h2>
                 </div>
                 <div class="houses" id="house6"><img src="house3.jpg">
-                    <h3 id="btn8">Renovated house</h3>
+                    <h2>Renovated house</h2>
                 </div>
 
 
@@ -580,6 +568,44 @@
         </div>
     </div>
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
