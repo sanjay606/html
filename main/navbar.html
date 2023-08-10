@@ -43,17 +43,18 @@
             color: rgb(248, 248, 243);
         }
 
-        .abc:hover {
+        /* .abc:hover {
 
             width: 15%;
             /* background-color: green; */
-            cursor: pointer;
-            border: 2px solid black;
-            border-radius: 10px;
-            color: black;
+            /* cursor: pointer; */
+            /* border: 2px solid black; */
+            /* border-radius: 10px; */
+            /* color: black; */
 
-        }
-        #active{
+        } 
+
+        #active {
             position: fixed;
         }
 
@@ -96,6 +97,13 @@
 
 
         }
+        #select option{ width: 500px;
+
+        }
+        #a{
+            font-size: 25px;
+        }
+            
     </style>
 
 
@@ -105,20 +113,27 @@
     <header class="container">
         <div class="logo"></div>
         <ul class="nav">
-             <li class="abc"><a href="#" id="action">Home
-                 <!-- <select>
+            <li class="abc"><a href="#" id="action">Home
 
-                <option value="">name</option>
-                <option value="">class</option>
-                <option value="">name2</option>
-                <option value="">name3</option>
-                <option value="">name4</option>
-    
-    
-            </select> </a> --> 
-                
+
             </li>
-            <li class="abc"><a href="#">About</a></li>
+            <li class="abc"><button>About
+                <select name="About" id="about">
+
+                    
+                    
+               
+                    <option value="">click here</option>
+                    <option value="diksha">diksha </option>
+                    <option value="yogi">yogi </option>
+                    <option value="sa">sa </option>
+                    <option value="san">san </option>
+                    <option value="sano">sano </option>
+                    <option value="sanj">sanj </option>
+                    <option value="sanjay">sanjay </option>
+                    <select>
+                    </button>
+            </li>
             <li class="abc"><a href="#">Contact</a></li>
             <li class="abc"><a href="#">More</a> </li>
         </ul>
