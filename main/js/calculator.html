@@ -1,40 +1,132 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Calculator</title>
-</head>
-<body>
-    <h2>Simple Calculator</h2>
-    
-    <label for="operation">Select an operation:</label>
-    <select id="operation">
-        <option value="add">Addition</option>
-        <option value="subtract">Subtraction</option>
-        <option value="multiply">Multiplication</option>
-        <option value="divide">Division</option>
-    </select>
-
-    <br><br>
-
-    <label for="num1">Enter number 1: </label>
-    <input type="number" id="num1"><br>
-
-    <label for="num2">Enter number 2: </label>
-    <input type="number" id="num2"><br>
-
-    <button onclick="calculate()">Calculate</button>
-
-    <h3>Result:</h3>
-    <p id="result"></p>
-
-    <script>
-        function calculate() {
-            const operation = document.getElementById("operation").value;
-            const num1 = parseFloat(document.getElementById("num1").value);
-            const num2 = parseFloat(document.getElementById("num2").value);
-            let result;
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: black;
 
         }
+
+        h2 {
+            text-align: center;
+
+        }
+
+        #inputbox {
+            display: inline-block;
+            width: 15%;
+            margin-left: 42%;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 10px;
+            /* border: 2px solid black; */
+
+
+        }
+
+        .button {
+            margin: 5px;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Use My Calculator</h2>
+    <div class="container">
+        <input type="text" id="inputbox" placeholder="0">
+        <div class="row">
+
+
+            <button class="button">AC</button>
+            <button class="button">del</button>
+            <button class="button">%</button>
+            <button class="button">&</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+        </div>
+        <div class="row">
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button">m+</button>
+            <button class="button">=</button>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        let string = "";
+let input = document.getElementById('inputbox');
+        let buttons = document.querySelectorAll("button");
+       let arr = Array.from(buttons);
+       arr.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                if (e.target.innerHTML == '=') {
+                    string = eval(string);
+                    input.value = string;
+
+                }
+                else if (e.target.innerHTML == 'AC') {
+                    string = "";
+                    input.value = string; 
+
+                }
+                else if (e.target.innerHTML == 'del') {
+                    string = "";
+                    input.value = string; 
+
+                }
+                else {
+                
+                    string += e.target.innerHTML;
+                    input.value = string;
+                }
+            })
+     });
+
+    //  let string = "";
+    //  let input = document.getElementById("inputbox");
+    //  let buttons = document.querySelectorAll("butons");
+    //  let arr = array.fro(buttons);
+    //  arr.forEach((button) => {
+    //     button.addEventListener('click',(e)=>{
+    //         if()
+
+    //     })
+    //  });
+     
     </script>
+
 </body>
+
 </html>
