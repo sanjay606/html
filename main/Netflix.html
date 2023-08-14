@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        /* body{
+    background-image: url('netflix bac.jpg');
+} */
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* body {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        } */
+
+
+
+        .container {
+            height: 100vh;
+            border: 2px solid black;
+            /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+
+        }
+
+        /* img part */
+
+        img {
+            height: 100%;
+            width: 100%;
+            /* background: rgb(0 0 0 / 40%); */
+            background-image: rgba(0, 0, 0, 0.8) 100%;
+
+
+        }
+
+
+        h1 {
+            position: absolute;
+            bottom: 60%;
+            color: white;
+            font-size: 3rem;
+            font-weight: 700;
+            left: 22%;
+        }
+
+        .p1 {
+            position: absolute;
+            bottom: 50%;
+            color: white;
+            /* font-size: 1rem; */
+            font-weight: 700;
+            font-size: 25px;
+            left: 35%;
+        }
+
+        .p2 {
+            position: absolute;
+            bottom: 43%;
+            color: white;
+            /* font-size: 1rem; */
+            font-weight: 700;
+            font-size: 25px;
+            left: 24%;
+        }
+
+        input {
+            position: absolute;
+            bottom: 30%;
+            width: 400px;
+            height: 60px;
+            color: white;
+            font-size: 20px;
+            left: 30%;
+            border-radius: 7px;
+            border: 1px solid white;
+            opacity: 0.732;
+        }
+
+        #inp {
+            padding-left: 10px;
+
+            background-color: rgb(24, 21, 21)
+        }
+
+        button {
+            position: absolute;
+            bottom: 30%;
+            width: 200px;
+            height: 60px;
+            color: white;
+            font-size: 30px;
+            left: 58%;
+            border-radius: 7px;
+            border: 1px solid white;
+            /* opacity: 0.73 */
+            background-color: rgb(229, 9, 20);
+        }
+
+        /* tv start */
+
+
+
+        .yourtv {
+            height: 70%;
+
+            background-color: black;
+
+            border: 2px solid black;
+        }
+
+        #img2 {
+            position: absolute;
+            right: 0%;
+            height: 60%;
+            width: 40%;
+            padding-right: 150px;
+
+            z-index: 1;
+        }
+
+        #enjoy {
+            padding-top: 7%;
+            color: aliceblue;
+            padding-left: 15%;
+            font-size: 3rem;
+        }
+
+        #pera {
+            padding-top: 4%;
+            color: aliceblue;
+            padding-left: 15%;
+            font-size: 25px;
+        }
+
+        #vdo {
+            position: absolute;
+            z-index: -1;
+            top: 3%;
+            left: 80px;
+            height: 400px;
+            width: 444px;
+            overflow: none;
+
+
+        }
+
+
+
+
+
+        .download {
+            height: 70%;
+
+            background-color: black;
+
+            border: 2px solid black;
+        }
+
+        #img3 {
+            height: 90%;
+            width: 40%;
+            padding-left: 10%;
+
+
+
+
+        }
+
+        #box {
+
+
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+
+        /* .everywhere {
+            height: 15%;
+            border: 2px solid black;
+        }
+
+        .profile {
+            height: 15%;
+            border: 2px solid black;
+        }
+
+        .askquestion {
+            height: 20%;
+            border: 2px solid black;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="netflix bac.jpg">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <p class="p1"> Watch anywhere. Cancel anytime.</p>
+        <p class="p2"> Ready to watch? Enter your email to create or restart your membership.</p>
+
+        <input type="text" id="inp" placeholder="Email address">
+        <button class="btn">Get Started ></button>
+
+
+        <hr>
+
+        <div class="yourtv">
+
+            <div id="img2"> <img src="tv.png">
+                <div><video id="vdo" data-uia="nmhp-card-animation-asset-video" Autoplay playsinline muted loop>
+
+                        <source
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                            type="video/mp4">
+                    </video></div>
+
+            </div>
+            <h2 id="enjoy">Enjoy on your TV</h2>
+            <p id="pera">Watch on smart TVs, PlayStation, Xbox, Chromecast,<br>
+                Apple TV, Blu-ray players and more.
+
+            </p>
+        </div>
+        <hr>
+
+        <div class="download">
+
+
+            <div> <img id="img3" src="mobile-0819.jpg">
+                <h1 id="box">hi hi</h1>
+
+            </div>
+        </div>
+        <div class="everywhere"></div>
+        <div class="profile"></div>
+        <div class="askquestion"></div>
+
+
+    </div>
+
+</body>
+
+</html>
