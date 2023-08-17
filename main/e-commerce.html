@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 76px;
+            background-color: rgb(166, 231, 237);
+            padding: 30px 10%;
+        }
+
+        nav li {
+            display: inline-block;
+            list-style: none;
+            padding: 0px 30px;
+
+
+        }
+
+        img {
+            position: absolute;
+            left: 2%;
+            top: 2%;
+        }
+
+        button {
+            font-size: 25px;
+            border-radius: 10px;
+            padding: 0px 15px;
+            background-color: black;
+            color: #Fff;
+            margin-left: 20px;
+            position: relative;
+            left: 0%;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 76px;
+            background-color: black;
+            padding: 30px 10%;
+            color: #Fff;
+
+        }
+
+        .options li {
+            display: inline-block;
+            list-style: none;
+            padding: 0px 30px;
+
+        }
+
+        .slide {
+            height: 100vh;
+            position: absolute;
+            width: 20%;
+
+            animation-name: sanjay;
+            animation-delay: 0ms;
+            animation-iteration-count: infinite;
+            background-image: url('sanjay.jpg');
+            background-size: 100% 100%;
+
+
+
+
+
+        }
+       .silde:hover {
+        
+          
+            background-image: url('sanjay.jpg');
+        }
+
+        @keyframes sanjay {
+            0% {
+                background-image: url('sanjay.jpg');
+            }
+
+            25% {
+                background-image: url('new-banner-1X1-DRESSES-shootimage--1--1692174566.jpg');
+            }
+
+            50% {
+                background-image: url('newbanner-1x1-UltimateJoggers-common-1692097282.jpg');
+            }
+
+            75% {
+                background-image: url('1X1-vests-1692177524.jpg');
+            }
+
+            100% {
+                background-image: url('Oversized-1x1-common-1692097758.jpg');
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="js/ic-desktop-bwkf-trademark-logo.svg">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"></a>MAN</li>
+                <li><a href="#"></a>WOMEN</li>
+                <li><a href="#"></a>MOBILE COVER</li>
+            </ul>
+        </nav>
+        <!-- <button>Login</button> -->
+        <button>Sign up</button>
+    </header>
+    <div class="options">
+        <li>MAN</li>
+        <li>WOMEN</li>
+        <li>ACCESSORIES</li>
+        <li>BEWAKOOF AIR</li>
+        <li>OFFICIAL MEARCH</li>
+        <li>PLUS SIZE</li>
+        <li>TEENS</li>
+
+    </div>
+    <div class="slide">
+
+    </div>
+</body>
+
+</html>

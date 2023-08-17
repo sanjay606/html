@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+  <div class="slide">
+    <img src="new-banner-1X1-DRESSES-shootimage--1--1692174566.jpg" alt="Slide 1">
+  </div>
+  <div class="slide">
+    <img src="sanjay.jpg" alt="Slide 2">
+  </div>
+  <div class="slide">
+    <img src="Oversized-1x1-common-1692097758.jpg" alt="Slide 3">
+  </div>
+</div>
+<script>
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides[currentIndex].style.display = 'none';
+  slides[index].style.display = 'block';
+  currentIndex = index;
+}
+
+function nextSlide() {
+  let newIndex = currentIndex + 1;
+  if (newIndex >= slides.length) {
+    newIndex = 0;
+  }
+  showSlide(newIndex);
+}
+
+// You can also add previousSlide() and other functions as needed
+
+// Automatic slide change (optional)
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+</script>
+</body>
+</html>
